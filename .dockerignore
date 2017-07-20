@@ -1,0 +1,11 @@
+# Directory/files listed here are ignored by the docker copy command
+
+# Node modules will be installed after the source is copied in
+node_modules
+
+# Ignore any npm log files
+npm-debug.log
+
+# Ignore git files; not needed and just adds to container bloat
+.git
+.gitignore

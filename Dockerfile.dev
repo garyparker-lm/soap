@@ -1,0 +1,15 @@
+# Use the node 8 image on dockerhub as our base image
+FROM node:8.0.0
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install nodemon globally
+RUN npm install -g nodemon
+
+# Expose 3000; the port out app is expected to run on
+EXPOSE 3000
+
+# Execute nodemon with the below arguments when our container is run
+CMD [ "nodemon", "-L", "/usr/src/app/bin/www" ]

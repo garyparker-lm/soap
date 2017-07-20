@@ -1,0 +1,8 @@
+const config = {
+  SOAP_USER: {{ keyOrDefault "SOAP_USER" "bob" }},
+  SOAP_PASSWORD: {{ secret "SOAP_PASSWORD" }},
+  SOAP_SERVICE: {{ service "SOAP_SERVICE" }}
+  NODE_PORT: {{ key "" }},
+};
+
+module.exports = config;

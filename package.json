@@ -1,0 +1,17 @@
+{
+  "name": "soap",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "node-soap": "^1.0.0",
+    "soap": "^0.19.2",
+    "strong-soap": "^1.2.6"
+  }
+}
